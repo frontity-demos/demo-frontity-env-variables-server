@@ -17,9 +17,6 @@ export default {
           .then( response => response.json() )
         state.tmdb = { detailsMovie }
       }
-      // beforeSSR: ({ state, libraries }) => {
-      //   console.log('Gonna SSR this page');
-      // },
     }
   },
 };
