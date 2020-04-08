@@ -8,15 +8,18 @@ config();
 export default {
   ...packageClient,
   actions: {
-    // beforeSSR: async () => {
-    //   const {API_TMDB} = process.env
-    //   const URL = `https://api.themoviedb.org/3/movie/550?api_key=${API_TMDB}`
-    //   const data = await fetch(URL)
-    //   console.log(data)
-    // },
-    beforeSSR: ({ state, libraries }) => {
-      console.log('Gonna SSR this page');
-    },
-    ...packageClient.actions,
+    theme: {
+      ...packageClient.actions.theme,
+      beforeSSR: async ({ state }) => {
+        const {API_TMDB} = process.env
+        const URL = `https://api.themoviedb.org/3/movie/550?api_key=${API_TMDB}`
+        const detailsMovie = await fetch(URL)
+          .then( response => response.json() )
+        state.tmdb = { detailsMovie }
+      }
+      // beforeSSR: ({ state, libraries }) => {
+      //   console.log('Gonna SSR this page');
+      // },
+    }
   },
 };
