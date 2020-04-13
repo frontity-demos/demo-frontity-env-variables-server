@@ -5,5 +5,8 @@
       "src": "package.json",
       "use": "@frontity/now"
     }
-  ]
+  ],
+  "env": {
+    "API_TMDB": "@api_tmdb"
+  }
 }
