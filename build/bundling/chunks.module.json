@@ -1,0 +1,60 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.42.1",
+  "hash": "b85c9e4dcdadb07ec4f1",
+  "publicPath": "/static/",
+  "outputPath": "/Users/juanma/PROJECTS/2020/FRONTITY/DEMOS/demo-frontity-env-variables-server/build/static",
+  "assetsByChunkName": {
+    "demo-frontity-env-variables-server": "demo-frontity-env-variables-server.module.5238d1056065551f27d1.js"
+  },
+  "assets": [
+    {
+      "name": "demo-frontity-env-variables-server.module.5238d1056065551f27d1.js",
+      "size": 257156,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "demo-frontity-env-variables-server"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "demo-frontity-env-variables-server": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "demo-frontity-env-variables-server.module.5238d1056065551f27d1.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "demo-frontity-env-variables-server": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "demo-frontity-env-variables-server.module.5238d1056065551f27d1.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
