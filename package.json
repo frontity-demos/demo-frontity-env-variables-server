@@ -7,7 +7,6 @@
     "frontity"
   ],
   "scripts": {
-    "prestart": "frontity build",
     "start": "frontity serve --port $PORT",
     "dev": "frontity dev",
     "build": "frontity build",
